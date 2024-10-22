@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+.upper{
+    width: screen;
+    height: 90px;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    height: 80px;
+}
+.img{
+    height: 70px;
+    padding-left: 20px;
+}
+.lg{
+    height: 80px;
+    width: 100px;
+}
+.link{
+    color: white;
+    text-align: right;
+    margin: 0;
+    margin-top: 20px;
+    width: 50%;
+}
+.teams{
+    margin-left: 40px;
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+}
+.about{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin: 0 auto;
+    width: 66%;
+}
+.sc{
+    margin-bottom: 200px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #454444;
+    border-radius: 20px;
+}   
