@@ -1,11 +1,18 @@
 import './App.css';
+import Map from './Map.jsx'
+import Home from './Home.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+function Main() {
   return (
-    <div className="App">
-      <h1>welcome to seizo</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />   
+        <Route path="/map" element={<Map />} /> 
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default Main;
+
