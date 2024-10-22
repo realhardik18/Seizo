@@ -1,5 +1,5 @@
 from creds import TOGETHER_AI_API_KEY
-from helpers import TopRawMaterialStates
+from helpers import TopRawMaterialStates,BreakDown
 from flask import Flask,request
 from flask_cors import CORS
 
@@ -10,11 +10,15 @@ CORS(api)
 def home():
     return 'welcome to seizo'
 
-@api.route('/top5states')
+@api.route('/top3states')
 def top5states():
     item = request.args.get('item')
     return TopRawMaterialStates(item)
 
+@api.route('/breakdownproduct')
+def breakdown():
+    product = request.args.get('product')    
+    return BreakDown(product)
 
 api.run(debug=True)
 

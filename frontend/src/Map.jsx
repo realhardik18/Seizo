@@ -14,7 +14,7 @@ const Map = () => {
     if (!inputItem) return; // Don't send the request if input is empty
 
     try {
-      const response = await fetch(`http://127.0.0.1:5000/top5states?item=${inputItem}`);
+      const response = await fetch(`http://127.0.0.1:5000/top3states?item=${inputItem}`);
       if (response.ok) {
         const data = await response.json();
         setRetrievedData(data); // Display the API response, assume it's an array of state names
@@ -148,7 +148,7 @@ const Map = () => {
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{
-            scale: 750,
+            scale: 850,
             center: [78.9629, 20.5],
           }}
           style={{ width: '100%', height: '100%' }}
