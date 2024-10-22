@@ -35,19 +35,22 @@
     text-shadow: 0 1px 0 #454444, 0 2px 0 #454444, 0 3px 0 #454444, 0 4px 0 #454444, 0 5px 0 #454444, 0 6px 0 #454444, 0 7px 0 #454444, 0 8px 0 #454444, 0 9px 0 #454444, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 }
-  
 
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
 }
 .open{
     width: screen;
-    height: 600px;
+    height: 591px;
     background-color: black;
 }
 h1{
     margin: 0;
-    padding-top: 220px;
+    padding-top: 130px;
     text-align: center;
     font-size: 150px;
 }
@@ -63,21 +66,105 @@ h1{
     margin-right: 25px;
     color: white;
     text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 .about{
     color: white;
     text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 .upper{
     width: screen;
-    height: 20px;
+    height: 90px;
     display: flex;
 }
 .logo{
     width: 50%;
-    height: 20px;
+    height: 80px;
+    margin: 0;
 }
 .img{
     height: 70px;
     padding-left: 20px;
+}
+.lg{
+    height: 80px;
+    width: 100px;
+}
+.social{
+    color: white;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 150px;
+}
+.github{
+    height: 40px;
+}
+.mid{
+    width: screen;
+    height: 591px; 
+}
+.background-clip{
+    position:absolute;
+    left: 0;
+    z-index: -1;
+}
+video{
+    height: 591px;
+}
+.func{
+    color: white;
+    width: 50%;
+    margin-left: 600px;
+    padding-top: 160px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+.but{
+    margin-top: 50px;
+    margin-left: 800px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000000;
+    border-color: rgb(74, 74, 211);
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, sans-serif; 
+}
+.but:hover{
+    cursor: pointer;
+    background-color: rgb(74, 74, 211);
+    color: black;
+}
+.scroll{
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #454444;
+    border-radius: 20px;
+}
+.top{
+    margin-left: 1220px;
+    margin-top: 140px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(74, 74, 211);
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+}
+.top:hover{
+    cursor: pointer;
+    background-color: rgb(74, 74, 211);
+    color: #000000;
 }

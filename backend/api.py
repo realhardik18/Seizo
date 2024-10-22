@@ -10,7 +10,7 @@ CORS(api)
 def home():
     return 'welcome to seizo'
 
-@api.route('/top3states')
+@api.route('/top5states')
 def top5states():
     item = request.args.get('item')
     return TopRawMaterialStates(item)

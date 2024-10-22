@@ -14,7 +14,7 @@ const Map = () => {
     if (!inputItem) return; // Don't send the request if input is empty
 
     try {
-      const response = await fetch(`http://127.0.0.1:5000/top3states?item=${inputItem}`);
+      const response = await fetch(`http://127.0.0.1:5000/top5states?item=${inputItem}`);
       if (response.ok) {
         const data = await response.json();
         setRetrievedData(data); // Display the API response, assume it's an array of state names
@@ -61,16 +61,7 @@ const Map = () => {
         left: '0',
         boxShadow: '2px 0 5px rgba(0,0,0,0.3)',
       }}>
-        <h2>Hover Status</h2>
-        <div style={{
-          padding: '10px',
-          background: '#333333',
-          borderRadius: '5px',
-          boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
-        }}>
-          <strong>{hoveredState ? hoveredState : "false"}</strong>
-        </div>
-
+        <h2>Seizo Interactive Supplier Map</h2>
         {/* Input and Button for Data Retrieval */}
         <div style={{
           padding: '10px',
