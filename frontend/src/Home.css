@@ -1,170 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  padding: 20px; /* Space around the section */
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  width: 100%;
+  max-width: 1200px; /* Optional max width */
+  align-items: center; /* Center vertically */
+  margin-bottom: 20px; /* Space below */
+}
+
+.logo .img {
+  height: 60px; /* Consistent logo height */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+  align-items: center; /* Center items vertically */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white; /* Link color */
+  font-weight: 500; /* Medium weight */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.github-link {
+  display: flex; /* Flex display for centering */
+  align-items: center; /* Center icon vertically */
+}
+
+.github-icon {
+  height: 24px; /* Set height for the GitHub icon */
+  width: 24px; /* Set width for the GitHub icon */
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
 .text-pop-up-top {
-	-webkit-animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            color: white;
-}
-@-webkit-keyframes text-pop-up-top {
-0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-}
-100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #454444, 0 2px 0 #454444, 0 3px 0 #454444, 0 4px 0 #454444, 0 5px 0 #454444, 0 6px 0 #454444, 0 7px 0 #454444, 0 8px 0 #454444, 0 9px 0 #454444, 0 50px 30px rgba(0, 0, 0, 0.3);
-}
-}
-@keyframes text-pop-up-top {
-0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-}
-100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #454444, 0 2px 0 #454444, 0 3px 0 #454444, 0 4px 0 #454444, 0 5px 0 #454444, 0 6px 0 #454444, 0 7px 0 #454444, 0 8px 0 #454444, 0 9px 0 #454444, 0 50px 30px rgba(0, 0, 0, 0.3);
-}
+  margin: 20px 0; /* Space above and below */
+  text-align: center; /* Center title */
+  font-size: 48px; /* Increased font size for "Seizō" */
+  color: white; /* Ensure text is white */
 }
 
+.mid {
+  display: flex; /* Use flex layout for the mid section */
+  padding: 10px; /* Reduced space around the mid section */
+  align-items: center; /* Center items vertically */
+}
 
-html{
-    scroll-behavior: smooth;
+.mid-content {
+  max-width: 600px; /* Limit the width of the text */
+  margin-left: 10px; /* Reduced space between text and video */
 }
-body{
-    margin: 0;
+
+.func {
+  margin: 0; /* Remove margin */
+  line-height: 1.6; /* Better line spacing */
+  font-size: 18px; /* Adjust font size for readability */
 }
-.open{
-    width: screen;
-    height: 591px;
-    background-color: black;
+
+.background-clip {
+  width: 100%;
+  height: auto; /* Responsive video */
+  max-width: 600px; /* Limit video width */
+  margin: 0; /* Ensure no margin on video */
 }
-h1{
-    margin: 0;
-    padding-top: 130px;
-    text-align: center;
-    font-size: 150px;
+
+.but,
+.top {
+  padding: 10px 20px; /* Consistent padding */
+  margin: 10px; /* Space around buttons */
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
-.link{
-    color: white;
-    text-align: right;
-    margin: 0;
-    margin-top: 20px;
-    width: 50%;
-}
-.team{
-    margin-left: 40px;
-    margin-right: 25px;
-    color: white;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-}
-.about{
-    color: white;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-}
-.upper{
-    width: screen;
-    height: 90px;
-    display: flex;
-}
-.logo{
-    width: 50%;
-    height: 80px;
-    margin: 0;
-}
-.img{
-    height: 70px;
-    padding-left: 20px;
-}
-.lg{
-    height: 80px;
-    width: 100px;
-}
-.social{
-    color: white;
-    text-align: right;
-    margin-right: 15px;
-    margin-top: 150px;
-}
-.github{
-    height: 40px;
-}
-.mid{
-    width: screen;
-    height: 591px; 
-}
-.background-clip{
-    position:absolute;
-    left: 0;
-    z-index: -1;
-}
-video{
-    height: 591px;
-}
-.func{
-    color: white;
-    width: 50%;
-    margin-left: 600px;
-    padding-top: 160px;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-.but{
-    margin-top: 50px;
-    margin-left: 800px;
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #000000;
-    border-color: rgb(74, 74, 211);
-    color: white;
-    font-size: 15px;
-    font-weight: lighter;
-    font-family: Arial, sans-serif; 
-}
-.but:hover{
-    cursor: pointer;
-    background-color: rgb(74, 74, 211);
-    color: black;
-}
-.scroll{
-    text-decoration: none;
-    color: white;
-}
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    background-color: black;
-}
-::-webkit-scrollbar-thumb{
-    background-color: #454444;
-    border-radius: 20px;
-}
-.top{
-    margin-left: 1220px;
-    margin-top: 140px;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    border: 2px solid rgb(74, 74, 211);
-    background-color: #000000;
-    color: white;
-    font-size: 30px;
-}
-.top:hover{
-    cursor: pointer;
-    background-color: rgb(74, 74, 211);
-    color: #000000;
+
+.but:hover,
+.top:hover {
+  background-color: #0056b3; /* Darken button on hover */
 }

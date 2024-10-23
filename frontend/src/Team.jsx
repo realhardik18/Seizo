@@ -14,7 +14,7 @@ const Team = () => {
         <div className="text-white w-screen overflow-x-hidden">
             <header className="upper">
                 <p className="logo">
-                    <a href="newindex.html" className="lg">
+                    <a href="/" className="lg">
                         <img src={logo} alt="Company Logo" className="img" />
                     </a>
                 </p>
